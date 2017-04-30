@@ -11,7 +11,7 @@ useRPackages ? false
 }:
 
 let
-  version = "1.1.216";
+  version = "1.1.217";
   ginVer = "1.5";
   gwtVer = "2.7.0";
 in
@@ -22,7 +22,7 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://github.com/rstudio/rstudio/archive/v${version}.tar.gz";
-    sha256 = "07lp2ybvj7ippdrp7fv7j54dp0mm6k19j1vqdvjdk95acg3xgcjf";
+    sha256 = "13x4kc7lmv5b9hi319gkh7wny8a2xqgcbgycqckxa4j80vazl9bf";
   };
 
   # Hack RStudio to only use the input R.
